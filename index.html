@@ -23,15 +23,13 @@
             <nav class="nav">
                 <ul class="lista" >
                     <li class="link" ><a href="#sobremi">SOBRE MI</a></li>
-                    <li class="link"> <a href="#experiencia">EXPERIENCIA</a></li>
-                    <li class="link"> <a href="#portafolio">PROYECTOS</a></li>
+                    <li class="link"> <a href="#PELIS">PELICULA FAVORITA</a></li>
                     <li class="link"> <a href="#contacto">CONTACTO</a></li>
                     <li id="dropdwn">
                         <a href="#"><img src="img/menu.png" alt="menu" class="logoMenu"></a>
                         <ul>
                             <li > <a href="#sobremi">SOBRE MI</a></li>
-                            <li > <a href="#experiencia">EXPERIENCIA</a></li>
-                            <li > <a href="#portafolio">PROYECTOS</a></li>
+                            <li > <a href="#PELIS">PELICULA FAVORITA</a></li>
                             <li > <a href="#contacto">CONTACTO</a></li>  
                         </ul>
                     </li>
@@ -65,7 +63,7 @@
         </section>
 
 
-          <section id="sobremi">
+        <section id="sobremi">
 
             <article>
 
@@ -138,7 +136,97 @@
 
         </section>
 
+         <section id="PELIS">
+            <h2>Peliculas favoritas</h2>
+            <div class="container-portafolio">
+
+                <div class="carts">
+                    <h2>Enemigo al asecho</h2>
+                    <div class="cart-contenedor-img">
+                        <img src="img/enemigo.jpg" alt="enemigoalasecho">
+                    </div>
+                    <p>Un enemigo oculto acecha al protagonista, generando tensión y miedo constante mientras espera el momento de atacar.
+                    </p>
+                </div>
+
+                <div class="carts">
+                    <h2>Matrix</h2>
+                    <div class="cart-contenedor-img">
+                         <img src="img/matrix.jpg" alt="matrix">
+                     </div>
+                    <p>Un hacker descubre la realidad simulada y lucha contra máquinas que controlan a la humanidad.</p>
+                </div>
+
+                 <div class="carts">
+                    <h2>Tropa de Elite</h2>
+                     <div class="cart-contenedor-img">
+                         <img src="img/tropa.jpg" alt="tropa de elite">
+                    </div>
+                    <p>Un grupo policial combate el crimen en favelas, enfrentando corrupción, violencia y decisiones extremas.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="cantainer-contacto">
+                <h2>Dejame tu mensaje!</h2>
+                <div class="contenedor-iconos">
+
+                    <a href="#contenedor-mensaje" id="mensaje"> <img src="img/mail.png" alt="mail" class="img-contacto"></a>
+    
+                    <a href="https://github.com/leonardofvp" target="_blank"><img src="img/github.png" alt="github"
+                            class="img-contacto"></a>
+    
+                    <a href="https://www.linkedin.com/in/leonardo-vargas1/" target="_blank"> <img src="img/linkedin.png"
+                            alt="linkeding" class="img-contacto"></a>
+    
+                </div>
+            </div>
+
+            
+
+            <div id="contenedor-mensaje">
+
+                <form action="https://formspree.io/f/mbjnkevd" method="POST">
+
+                    <div class="contenedor-formulario">
+
+                        <label>
+                            Nombre:
+                        </label>
+                        <input type="nombre" name="nombre" placeholder="nombre">
+
+                        <label>
+                            Email:
+                        </label>
+
+                        <input type="email" name="email" placeholder="email">
+
+                        <label>
+                            Mensaje:
+                        </label>
+
+                        <textarea name="message" rows="10" placeholder=" mensaje"></textarea>
+
+                        <button class="btn-formulario" type="submit">Enviar</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
+
+
+
+     <footer class="footer">
+
+        <p class="copirigths">&copy; 2026 leonardo vargas. Todos los derechos reservados.</p>
+        <img src="img/logofooter.png" alt="codigopalante" class="logo-footer">
+
+    </footer>
 </body>
 </html>
