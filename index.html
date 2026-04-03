@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS--> 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css"> 
+        <link rel="stylesheet" href="css/mdiaQuery.css"> 
     <!-- Googlw fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +17,128 @@
     <title>Portafolio-PFO1</title>
 </head>
 <body>
-    <header> </header>
-    <main></main>
+    <header>
+            <a href="#inicio"><img src="img/logonav.png" alt="Logo" class="logo"></a>
+
+            <nav class="nav">
+                <ul class="lista" >
+                    <li class="link" ><a href="#sobremi">SOBRE MI</a></li>
+                    <li class="link"> <a href="#experiencia">EXPERIENCIA</a></li>
+                    <li class="link"> <a href="#portafolio">PROYECTOS</a></li>
+                    <li class="link"> <a href="#contacto">CONTACTO</a></li>
+                    <li id="dropdwn">
+                        <a href="#"><img src="img/menu.png" alt="menu" class="logoMenu"></a>
+                        <ul>
+                            <li > <a href="#sobremi">SOBRE MI</a></li>
+                            <li > <a href="#experiencia">EXPERIENCIA</a></li>
+                            <li > <a href="#portafolio">PROYECTOS</a></li>
+                            <li > <a href="#contacto">CONTACTO</a></li>  
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+ <section id="inicio">
+            <img src="img/leo-removebg-preview.png" alt="fotoLeo" class="foto-leo">
+            <article>
+                <h1>Hola! Soy Leonardo Vargas</h1>
+                <h2>Backend Developer</h2>
+
+                <p> De ingeniero mecánico a desarrollador de software: Descubrí mi pasión por la tecnología durante los cursos y bootcamps
+                     en programación que he realizado en diversas plataformas. Considero que la tecnología está en constante evolución y me 
+                     gustaría formar parte de este cambio como desarrollador de software, donde pueda poner en práctica las habilidades y 
+                     conocimientos adquiridos durante mi proceso de capacitación. Mis metas a mediano y largo plazo incluyen conseguir 
+                     empleo en el campo de la tecnología de la información e iniciar estudios universitarios en informática.
+
+                </p>
+
+            
+                <div class="info">
+                    
+                    <a href="https://wa.me/5491173692984"> <img src="img/wasapp.png" class="wasapp-logo" alt="whatsApp"></a>
+                </div>
+                
+            </article>
+
+        </section>
+
+
+          <section id="sobremi">
+
+            <article>
+
+                <h2>SOBRE MI </h2>
+
+                <p class="resumen">
+                    Apasionado por la ingeniería y el desarrollo de software, mi principal motivación para adentrarme 
+                    en el mundo de la tecnología de la información es explorar nuevas oportunidades y desafíos en la industria
+                     del software. Actualmente, estoy ansioso por iniciar una tecnicatura en desarrollo de software para continuar 
+                     ampliando mis conocimientos y habilidades, con el objetivo de destacar aún más mi perfil profesional.
+
+                </p>
+
+                <h2>HABILIDADES </h2>
+
+                <div class="container-skills">
+
+                    <div class="skills">
+                        <img src="img/html.webp" alt="html">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/css.jpg" alt="css">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/js.jpg" alt="js">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/java.png" alt="java">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/springboot.png" alt="springboot">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/mysql.jpg" alt="mysql">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/posgres.png" alt="posgres">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/postman.png" alt="postman">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/aws.png" alt="aws">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/docker.png" alt="docker">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/ts.png" alt="typescript">
+                    </div>
+
+                    <div class="skills">
+                        <img src="img/angular.png" alt="angular">
+                    </div>
+
+                </div>
+
+
+            </article>
+
+        </section>
+
+    </main>
     <footer></footer>
 </body>
 </html>

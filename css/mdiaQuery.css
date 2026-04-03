@@ -1,0 +1,85 @@
+/* Media query para pantallas menores a 1074px (responsive) */
+@media screen and (max-width: 1074px){
+    
+ body{
+     padding-top: 50px;
+    }
+
+    /* Oculta los links principales */
+    .link {
+        display: none;
+    }
+
+    /* Muestra menú desplegable y logo menú */
+    .lista > li > a , .logoMenu, #dropdwn {
+        display: flex;
+    }
+
+    /* Muestra y estiliza el submenú al hacer hover */
+    .lista > li:hover > ul{
+        display: flex; /* Se muestra */
+        flex-direction: column; /* En columna */
+        align-items: center; /* Centrado horizontal */
+        gap: 15px; /* Espacio entre items */
+        justify-content: space-around; /* Distribución */
+        background-color: rgb(51, 51, 51); /* Fondo oscuro */
+        top: 70px; /* Posición vertical */
+        text-align: center; /* Texto centrado */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    /* Ajuste de enlaces dentro del submenú */
+    .nav ul li ul a{
+        border-bottom: none; /* Quita línea inferior */
+        padding:10px; /* Espaciado interno */
+    }
+}
+
+   
+
+@media(min-width: 1000px){
+   
+    body{
+     padding-top: 50px;
+    }
+     #inicio{
+         flex-direction: row;
+         align-items: center;
+     }
+     article{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+     }
+
+     .foto-leo{
+        width:400px;
+        margin-right: 60px;
+    }
+    p{
+        text-align:justify;
+        text-indent: 20px;
+        
+    }
+   
+ }
+
+
+ @media screen  and (max-width: 1074px){
+    
+    .link {
+        display: none;
+     }
+
+    #menu{
+        display: block;
+    }
+   
+  
+ }
+
+
+ 
+
+
+ 

@@ -1,0 +1,95 @@
+/* Header fijo arriba con sombra y fondo oscuro */
+header{
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Lo posiciona arriba del todo */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 90px; /* Altura del header */
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Separa elementos (logo - menú) */
+    align-items: center; /* Centra verticalmente */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3); /* Sombra inferior */
+    background-color:rgb(51, 51, 51); /* Fondo oscuro */
+    box-sizing: border-box; /* Incluye padding en el tamaño */
+}
+
+/* Navegación alineada a la derecha */
+nav{
+    width: 70%; /* Ancho del nav */
+    display: flex; /* Flexbox */
+    justify-content: flex-end; /* Alinea a la derecha */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Lista principal del menú en fila */
+.lista{
+    display: flex; /* Elementos en línea */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Cada item del menú */
+.lista li{
+    position: relative; /* Necesario para submenús */
+}
+
+/* Submenú base */
+.lista li ul{
+    position: absolute; /* Posición flotante */
+    min-width: 100px; /* Ancho mínimo */
+}
+
+/* Submenú oculto por defecto */
+.lista > li > ul  {
+    top: 100%; /* Aparece debajo del item */
+    right: 10px; /* Separación a la derecha */
+    display: none; /* Oculto */
+}
+
+/* Checkbox oculto (para menú responsive) */
+#dropdwn{
+    display: none;
+}
+
+/* Efecto hover en enlaces del menú */
+.lista a:hover {
+   background-color:  rgba(14 ,139 ,6, 0.7); /* Fondo verde */
+   font-weight: bold; /* Texto en negrita */
+   border-radius: 30px; /* Bordes redondeados */
+   transition: background-color 0.5s ease; /* Animación suave */
+   
+   a{
+    border-bottom: none; /* Quita la línea inferior */
+   }
+}
+
+/* Estilo general de enlaces */
+a {
+    text-decoration: none; /* Sin subrayado */
+    color: #fbfbfb; /* Color blanco */
+    font-weight: bold; /* Negrita */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Línea inferior en enlaces del nav */
+.nav ul li a{
+    border-bottom: 4px solid rgb(17, 97, 11); /* Línea verde */
+    /*border-bottom: 4px solid rgb(10, 51, 122);*/ /* Alternativa */
+}
+
+/* Quita los estilos de lista */
+ul{
+    list-style: none;  
+}
+
+ /* Tamaño del logo del menú (responsive) */
+ .logoMenu{
+    width: 60px; /* Ancho */
+    display: none; /* Oculto por defecto */
+    cursor: pointer; /* Cursor clickeable */
+}
+
+/* Tamaño del logo principal */
+.logo{
+   width: 150px; /* Ancho */
+   height: 80px; /* Alto */
+}
