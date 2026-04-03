@@ -7,6 +7,104 @@ body {
 }
 
 
+/*------------header ------*/
+
+/* Header fijo arriba con sombra y fondo oscuro */
+header{
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Lo posiciona arriba del todo */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 90px; /* Altura del header */
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Separa elementos (logo - menú) */
+    align-items: center; /* Centra verticalmente */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3); /* Sombra inferior */
+    background-color:rgb(51, 51, 51); /* Fondo oscuro */
+    box-sizing: border-box; /* Incluye padding en el tamaño */
+}
+
+/* Navegación alineada a la derecha */
+nav{
+    width: 70%; /* Ancho del nav */
+    display: flex; /* Flexbox */
+    justify-content: flex-end; /* Alinea a la derecha */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Lista principal del menú en fila */
+.lista{
+    display: flex; /* Elementos en línea */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Cada item del menú */
+.lista li{
+    position: relative; /* Necesario para submenús */
+}
+
+/* Submenú base */
+.lista li ul{
+    position: absolute; /* Posición flotante */
+    min-width: 100px; /* Ancho mínimo */
+}
+
+/* Submenú oculto por defecto */
+.lista > li > ul  {
+    top: 100%; /* Aparece debajo del item */
+    right: 10px; /* Separación a la derecha */
+    display: none; /* Oculto */
+}
+
+/* Checkbox oculto (para menú responsive) */
+#dropdwn{
+    display: none;
+}
+
+/* Efecto hover en enlaces del menú */
+.lista a:hover {
+   background-color:  rgba(14 ,139 ,6, 0.7); /* Fondo verde */
+   font-weight: bold; /* Texto en negrita */
+   border-radius: 30px; /* Bordes redondeados */
+   transition: background-color 0.5s ease; /* Animación suave */
+   
+   a{
+    border-bottom: none; /* Quita la línea inferior */
+   }
+}
+
+/* Estilo general de enlaces */
+a {
+    text-decoration: none; /* Sin subrayado */
+    color: #fbfbfb; /* Color blanco */
+    font-weight: bold; /* Negrita */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Línea inferior en enlaces del nav */
+.nav ul li a{
+    border-bottom: 4px solid rgb(17, 97, 11); /* Línea verde */
+    /*border-bottom: 4px solid rgb(10, 51, 122);*/ /* Alternativa */
+}
+
+/* Quita los estilos de lista */
+ul{
+    list-style: none;  
+}
+
+ /* Tamaño del logo del menú (responsive) */
+ .logoMenu{
+    width: 60px; /* Ancho */
+    display: none; /* Oculto por defecto */
+    cursor: pointer; /* Cursor clickeable */
+}
+
+/* Tamaño del logo principal */
+.logo{
+   width: 150px; /* Ancho */
+   height: 80px; /* Alto */
+}
+
 article{
     display: flex;
     flex-direction: column;
@@ -52,3 +150,373 @@ span{
     color:  rgb(14 ,139 ,6);
     font-weight: bold; 
 }
+
+
+/*-----------------main---------------*/
+
+#inicio {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    scroll-margin-top:0px ;
+   
+}
+
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foto-leo{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.wasapp-logo{
+    width: 70px;
+}
+
+
+/*-------- hover -------*/
+  .wasapp-logo:hover, .btn-formulario:hover, .skills:hover, .carts:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+    
+}
+
+/*--------------sobre mi-----------*/
+
+#sobremi, #PELIS, #contacto{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    scroll-margin-top:0px 
+}
+
+
+ .container-skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+ }
+
+ .skills{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.skills img  {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 100%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    border-radius: 5px;
+  } 
+
+/*----------- peliculas */
+  .container-portafolio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+  .carts{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(0,74 ,173);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.carts .cart-contenedor-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+.carts h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.carts p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.carts img{
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .cart-btn{
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .cart-btn a{
+    margin-left: 20px;
+    background-color: rgb(0,74 ,173);
+    border: 1px solid rgb(0,74 ,173);
+    border-radius: 10px;
+  }
+
+/*-------------  contacto -------*/
+
+.cantainer-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
+    background-color: #ffff;
+}
+
+
+
+.contenedor-iconos{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+#contenedor-mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    scroll-margin-top:80px;
+}
+
+
+#contmensaje-cerrar:hover{
+    transform:scale(1.2);
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+}
+
+form {
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.3);
+    background-color: #ffff;
+}
+
+
+/* botones*/
+
+.btn-formulario{
+    background-color: rgb(0,74 ,173);
+    color: #fbfbfb;
+    width: 50%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-formulario:hover, .skills:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+    
+}
+
+
+
+.btn-descarga:hover,  .linkding-logo:hover, .wasapp-logo:hover{
+    transform: scale(1.1);
+   
+}
+
+
+/* formulario*/
+
+label {
+    padding: 10px;
+    width: 50%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: rgb(0,74 ,173);
+    border-width: 2px;
+
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 15px;
+    border-color: rgb(0,74 ,173);
+    border-width: 2px;
+}
+
+
+/* imagenes*/
+
+.img-contacto{
+    max-width: 100%;
+    width: 60px;
+    
+}
+
+.img-contacto:hover ,  .cart-btn a:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgb(0,74 ,173);
+    
+}
+
+/*----------foooooter----------*/
+.footer{
+    min-height: 90px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fbfbfb;
+    padding: 15px;
+}
+
+
+.logo-footer{
+    width: 150px;
+}
+
+
+
+/* Media query para pantallas menores a 1074px (responsive) */
+@media screen and (max-width: 1074px){
+    
+ body{
+     padding-top: 50px;
+    }
+
+    /* Oculta los links principales */
+    .link {
+        display: none;
+    }
+
+    /* Muestra menú desplegable y logo menú */
+    .lista > li > a , .logoMenu, #dropdwn {
+        display: flex;
+    }
+
+    /* Muestra y estiliza el submenú al hacer hover */
+    .lista > li:hover > ul{
+        display: flex; /* Se muestra */
+        flex-direction: column; /* En columna */
+        align-items: center; /* Centrado horizontal */
+        gap: 15px; /* Espacio entre items */
+        justify-content: space-around; /* Distribución */
+        background-color: rgb(51, 51, 51); /* Fondo oscuro */
+        top: 70px; /* Posición vertical */
+        text-align: center; /* Texto centrado */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    /* Ajuste de enlaces dentro del submenú */
+    .nav ul li ul a{
+        border-bottom: none; /* Quita línea inferior */
+        padding:10px; /* Espaciado interno */
+    }
+}
+
+   
+
+@media(min-width: 1000px){
+   
+    body{
+     padding-top: 50px;
+    }
+     #inicio{
+         flex-direction: row;
+         align-items: center;
+     }
+     article{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+     }
+
+     .foto-leo{
+        width:400px;
+        margin-right: 60px;
+    }
+    p{
+        text-align:justify;
+        text-indent: 20px;
+        
+    }
+   
+ }
+
+
+ @media screen  and (max-width: 1074px){
+    
+    .link {
+        display: none;
+     }
+
+    #menu{
+        display: block;
+    }
+   
+  
+ }
+
+
+ 
+
+
+ 
